@@ -48,7 +48,10 @@
           "editor.formatOnSave": true,
           "editor.formatOnPaste": true,
           "editor.insertSpaces": true,
-          "editor.tabSize": 4
+          "editor.tabSize": 4,
+          "files.insertFinalNewline": true,
+          "files.trimFinalNewlines": true,
+          "files.trimTrailingWhitespace": true
         },
         "[django-html]": {
           "editor.rulers": [119],
@@ -56,7 +59,10 @@
           "editor.formatOnSave": true,
           "editor.formatOnPaste": true,
           "editor.insertSpaces": true,
-          "editor.tabSize": 2
+          "editor.tabSize": 2,
+          "files.insertFinalNewline": true,
+          "files.trimFinalNewlines": true,
+          "files.trimTrailingWhitespace": true
         },
 				"json.format.keepLines": true,
 				"[json]": {
