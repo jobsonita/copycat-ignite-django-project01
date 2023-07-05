@@ -7,12 +7,8 @@
   </head>
   <body>
     <div>
-      {% include "post.html" %}
-      {% include "post.html" %}
-      {% include "post.html" %}
-      {% include "post.html" %}
-      {% include "post.html" %}
-      {% include "post.html" %}
+      {% include "post.html" with author="Diego Fernandes" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio aliquam voluptate recusandae, non laborum dolore, excepturi iure repellat veniam modi, aliquid tempora facere libero cupiditate unde exercitationem repellendus! Fugiat!" %}
+      {% include "post.html" with author="Gabriel Buzi" content="Um novo post muito legal" %}
     </div>
   </body>
 </html>
