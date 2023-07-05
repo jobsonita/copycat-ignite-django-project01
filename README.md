@@ -106,3 +106,29 @@ or alternatively, use the Makefile `serve` script (after activating venv):
 source venv/bin/activate
 make serve
 ```
+
+## Concepts
+
+### "Components" and "Properties"
+
+> Note: here's a reminder that I'm trying to reproduce (hence copycat) the concepts from [Rocketseat's React course](https://github.com/jobsonita/rocketseat-ignite-react-project01). This is not intended as an actual guide for web development in Django which has its own concepts and particularities.
+
+A "component" is a template that acts like a complex html tag. It can receive "properties", and it returns a piece of html (with maybe some javascript?) code.
+
+```django
+# myapp/templates/post.html
+<div>
+    <strong>{{ author }}</strong>
+    <p>{{ content }}</p>
+</div>
+
+# myapp/templates/index.html
+...
+<body>
+  <div>
+    {% include "post.html" with author="Me" content="Whatever I want to say" %}
+    {% include "post.html" with author="You" content="Whatever you want to say" %}
+  </div>
+</body>
+</html>
+```
