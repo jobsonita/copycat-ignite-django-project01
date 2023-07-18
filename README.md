@@ -132,3 +132,26 @@ A "component" is a template that acts like a complex html tag. It can receive "p
 </body>
 </html>
 ```
+
+### Alternative to CSS Modules
+
+Unfortunately, Django doesn't come with Scoped CSS or a CSS Modules-like solution like React does, so I'll be using [`django-sass`](https://pypi.org/project/django-sass/) to emulate that until the Ignite course eventually evolves into Tailwind (and then I'll try integrating Tailwind to this project).
+
+We must run the following command to compile our `.scss` files:
+
+```bash
+./manage.py sass myapp/static/myapp/scss/ myapp/static/myapp/css/
+```
+
+In our `.html` files, we load the stylesheets:
+
+```html
+{% load static %}
+<link href="{% static 'myapp/css/component.css' %}" rel="stylesheet">
+```
+
+While running the project on a terminal, we can watch the files for changes on a second terminal:
+
+```bash
+./manage.py sass myapp/static/myapp/scss/ myapp/static/myapp/css/ --watch
+```
