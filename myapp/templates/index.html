@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
     <link href="{% static 'myapp/css/global.css' %}" rel="stylesheet" >
+    <link href="{% static 'myapp/css/styles.css' %}" rel="stylesheet" >
 
     <title>Django Project</title>
   </head>
@@ -19,8 +20,14 @@
     <div>
       {% include "header.html" %}
 
-      {% include "post.html" with author="Diego Fernandes" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio aliquam voluptate recusandae, non laborum dolore, excepturi iure repellat veniam modi, aliquid tempora facere libero cupiditate unde exercitationem repellendus! Fugiat!" %}
-      {% include "post.html" with author="Gabriel Buzi" content="Um novo post muito legal" %}
+      <div class="wrapper">
+        {% include "sidebar.html" %}
+
+        <main>
+          {% include "post.html" with author="Diego Fernandes" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio aliquam voluptate recusandae, non laborum dolore, excepturi iure repellat veniam modi, aliquid tempora facere libero cupiditate unde exercitationem repellendus! Fugiat!" %}
+          {% include "post.html" with author="Gabriel Buzi" content="Um novo post muito legal" %}
+        </main>
+      </div>
     </div>
   </body>
 </html>
