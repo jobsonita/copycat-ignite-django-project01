@@ -3,12 +3,6 @@
     display: flex;
     gap: 1rem;
 
-    &-author-avatar {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 8px;
-    }
-
     &-content {
         background: var(--gray-700);
         border-radius: 8px;

@@ -1,7 +1,7 @@
 {% load static %}
 <div class="comment">
     <link href="{% static 'myapp/css/comment.css' %}" rel="stylesheet" >
-    <img class="comment-author-avatar" src="https://github.com/jobsonita.png" />
+    {% include 'avatar.html' with src="https://github.com/diego3g.png" hideBorder=True %}
 
     <div class="flex">
         <div class="comment-content">

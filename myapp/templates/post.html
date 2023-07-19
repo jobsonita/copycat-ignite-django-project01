@@ -3,7 +3,7 @@
     <link href="{% static 'myapp/css/post.css' %}" rel="stylesheet" >
     <header class="post-header">
         <div class="post-author-profile">
-            <img class="post-author-avatar" src="https://github.com/jobsonita.png" />
+            {% include 'avatar.html' with src="https://github.com/jobsonita.png" %}
             <div>
                 <strong class="post-author-name">Jobson Gilberto</strong>
                 <span class="post-author-career">Web Developer</span>

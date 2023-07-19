@@ -1,0 +1,7 @@
+{% load static %}
+<link href="{% static 'myapp/css/avatar.css' %}" rel="stylesheet" >
+{% if hideBorder %}
+    <img class="avatar" src={{ src }} />
+{% else %}
+    <img class="avatarWithBorder" src={{ src }} />
+{% endif %}
