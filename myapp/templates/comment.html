@@ -1,0 +1,29 @@
+{% load static %}
+<div class="comment">
+    <link href="{% static 'myapp/css/comment.css' %}" rel="stylesheet" >
+    <img class="comment-author-avatar" src="https://github.com/jobsonita.png" />
+
+    <div class="flex">
+        <div class="comment-content">
+            <header class="comment-header">
+                <div>
+                    <strong class="comment-author-name">Diego Fernandes</strong>
+                    <time class="comment-time" dateTime="2023-07-15 20:06:45" title="15 de Julho às 20:06h">Cerca de 2h atrás</time>
+                </div>
+
+                <button class="comment-header-button" title="Deletar comentário">
+                    <i class="fa fa-trash fa-xl" ></i>
+                </button>
+            </header>
+
+            <p>Muito bom Devon, parabéns!! 👋👋</p>
+        </div>
+
+        <footer class="comment-footer">
+            <button class="comment-footer-button">
+                <i class="fa fa-thumbs-up"></i>
+                Aplaudir <span>20</span>
+            </button>
+        </footer>
+    </div>
+  </div>
