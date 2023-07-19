@@ -155,3 +155,7 @@ While running the project on a terminal, we can watch the files for changes on a
 ```bash
 ./manage.py sass myapp/static/myapp/scss/ myapp/static/myapp/css/ --watch
 ```
+
+### Alternative to phosphor-react
+
+Since I can't use that library on Django, I'll be using FontAwesome instead: https://fontawesome.com/docs/web/use-with/python-django

@@ -3,3 +3,4 @@ Django==4.2.3
 django-sass==1.1.0
 libsass==0.22.0
 sqlparse==0.4.4
+fontawesomefree==6.4.0
