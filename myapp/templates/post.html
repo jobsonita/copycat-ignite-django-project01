@@ -1,4 +1,22 @@
-<div>
-    <strong>{{ author }}</strong>
-    <p>{{ content }}</p>
-</div>
+{% load static %}
+<link href="{% static 'myapp/css/post.css' %}" rel="stylesheet" >
+<article class="post">
+    <header class="post-header">
+        <div class="post-author-profile">
+            <img class="post-author-avatar" src="https://github.com/jobsonita.png" />
+            <div>
+                <strong class="post-author-name">Jobson Gilberto</strong>
+                <span class="post-author-career">Web Developer</span>
+            </div>
+        </div>
+
+        <time class="post-time" dateTime="2023-07-11 20:15:30" title="11 de Julho às 20:15h" >Publicado há 1h</time>
+    </header>
+
+    <div class="post-content">
+        <p>Fala galeraa 👋</p>
+        <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
+        <p>👉 <a href="">jane.design/doctorcare</a></p>
+        <p><a href="">#novoprojeto #nlw #rocketseat</a></p>
+    </div>
+</article>
